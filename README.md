@@ -1,3 +1,5 @@
-# Techno-Beats-Machine
+### This is a Techno Beats Machine
 
-This is a Techno Beats Machine I created for Free Code Camp Front End Libraries Projects.
+[Click here to see it live](https://albee-jay.github.io/Techno-Beats-Machine/)
+
+This is one a of the tests for the Free Code Camp's Front End Libraries curriculum.
