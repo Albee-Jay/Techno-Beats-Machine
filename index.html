@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>ARJ | Techno Drum Machine</title>
+
+    <script>
+      function play(str) {
+        if (str === "q" || str === "Q") {
+          document.getElementById("display").innerText =
+            "Purple Pyramid Acid Bass";
+        } else if (str === "w" || str === "W") {
+          document.getElementById("display").innerText =
+            "Let Your Synth Control Your Body";
+        } else if (str === "e" || str === "E") {
+          document.getElementById("display").innerText = "Twisted Loop";
+        } else if (str === "a" || str === "A") {
+          document.getElementById("display").innerText = "Old School Techno";
+        } else if (str === "s" || str === "S") {
+          document.getElementById("display").innerText =
+            "Techno Synth-Headline";
+        } else if (str === "d" || str === "D") {
+          document.getElementById("display").innerText = "Techno Kick 2";
+        } else if (str === "z" || str === "Z") {
+          document.getElementById("display").innerText =
+            "80s Techno Funk Groove";
+        } else if (str === "x" || str === "X") {
+          document.getElementById("display").innerText = "Biohazard";
+        } else if (str === "c" || str === "C") {
+          document.getElementById("display").innerText = "Wow";
+        }
+
+        var audio = document.getElementById(str);
+        audio.play();
+      }
+
+      window.document.onkeyup = function (event) {
+        let keystroke = event.key;
+        if (keystroke === "q" || keystroke === "Q") {
+          play("Q");
+        } else if (keystroke === "w" || keystroke === "W") {
+          play("W");
+        } else if (keystroke === "e" || keystroke === "E") {
+          play("E");
+        } else if (keystroke === "a" || keystroke === "A") {
+          play("A");
+        } else if (keystroke === "s" || keystroke === "S") {
+          play("S");
+        } else if (keystroke === "d" || keystroke === "D") {
+          play("D");
+        } else if (keystroke === "z" || keystroke === "Z") {
+          play("Z");
+        } else if (keystroke === "x" || keystroke === "X") {
+          play("X");
+        } else if (keystroke === "c" || keystroke === "C") {
+          play("C");
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+      <h1 class="text-center my-3">Techno Beats Machine</h1>
+      <div class="card border my-3">
+        <div class="card-body border border-dark">
+          <div class="text-center" id="display">
+            Nothing Yet To Display / Press Letter Key or Screen Button
+          </div>
+        </div>
+      </div>
+      <div class="container-1 my-3">
+        <div class="row">
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-danger border border-dark"
+              id="drum-0"
+              onclick="play('Q')"
+            >
+              Q
+              <audio
+                src="./clip/Q - spivkurl-purple-pyramid-acid-bass-128-bpm-c.wav"
+                class="clip"
+                id="Q"
+              ></audio>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-warning border border-dark"
+              id="drum-1"
+              onclick="play('W')"
+            >
+              W
+              <audio
+                src="./clip/W - let-your-synth-control-your-body.wav"
+                class="clip"
+                id="W"
+              ></audio>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-success border border-dark"
+              id="drum-2"
+              onclick="play('E')"
+            >
+              E
+              <audio
+                src="./clip/E - twistedloop-techno-vgm.wav"
+                class="clip"
+                id="E"
+              ></audio>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-2 my-3">
+        <div class="row">
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-info border border-dark"
+              id="drum-3"
+              onclick="play('A')"
+            >
+              A
+              <audio
+                src="./clip/A - oldschool-techno.wav"
+                class="clip"
+                id="A"
+              ></audio>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-primary border border-dark"
+              id="drum-4"
+              onclick="play('S')"
+            >
+              S
+              <audio
+                src="./clip/S - techno-synthleadline.wav"
+                class="clip"
+                id="S"
+              ></audio>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-dark border border-dark"
+              id="drum-5"
+              onclick="play('D')"
+            >
+              D
+              <audio
+                src="./clip/D - techno-kick-2.wav"
+                class="clip"
+                id="D"
+              ></audio>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cpontainer-3 my-3">
+        <div class="row">
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-secondary border border-dark"
+              id="drum-6"
+              onclick="play('Z')"
+            >
+              Z
+              <audio
+                src="./clip/Z - 80s-tech-funk-groove.wav"
+                class="clip"
+                id="Z"
+              ></audio>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-light border border-dark"
+              id="drum-7"
+              onclick="play('X')"
+            >
+              X
+              <audio src="./clip/X - biohazard.wav" class="clip" id="X"></audio>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="drum-pad btn btn-block btn-white border border-dark"
+              id="drum-8"
+              onclick="play('C')"
+            >
+              C
+              <audio
+                src="./clip/C - ejbizzy123-w0wwow.wav"
+                class="clip"
+                id="C"
+              ></audio>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <footer class="text-center">
+      Copyright &copy 2021 Albee-Jay / Albert R Juarez
+    </footer>
+  </body>
+</html>
