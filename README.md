@@ -6,4 +6,4 @@ This is one of the test projects for the Free Code Camp's Front End Libraries cu
 
 I don't know why the repository says this is 100% HTML, because it isn't ... I used some JavaScript too, shooooo! Lol
 
-I welcome any and all comments or advice to help me make this project better. Thank you, Albee-Jay
+I welcome and appreciate any and all comments or help to make this project better. Thank You, Albee-Jay.
